@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IPL visualization</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <h1>IPL Dataset visualization</h1>
-    <div><form action="index.html" method="GET">Enter year : <input type="number" /><input type="submit" placeholder="Submit" /> </form></div>
-    <div id="matches-played-per-year" style="width: 100%; height: 600px; margin: 30px auto; border: 1px dotted black;"></div>
-    <div id="container" style="min-width:310px; height: 600px; margin: 30px auto; border: 1px dotted red;"></div>
-    <div id="container3" style="min-width:310px; height: 600px; margin: 30px auto; border: 1px dotted black;"></div>
-    <div id="container4" style="min-width:310px; height: 600px; margin: 30px auto; border: 1px dotted blue;"></div>
-    <div id="container5" style="width:100%; height: 1000px; margin: 30px auto; border: 1px dotted green;"></div>
+    <div style="margin: 30px;">
+         <label for="" class="title">Enter year :</label>
+         <input type="number" class="input_area" id="year" min="2008" max="2019" />
+          <button onclick="fetchbolwer();">Submit</button>
+          <p id="err" style="color: red;"></p>
+    </div>
+    <div id="container4" style=" height: 600px; margin: 1.5rem; border: 1px dotted blue;"></div>
+    <div id="matches-played-per-year" style=" height: 600px; margin: 1.5rem; border: 1px dotted black;"></div>
+    <div id="container" style=" height: 600px; margin: 1.5rem; border: 1px dotted red;"></div>
+    <div id="container3" style=" height: 600px; margin: 1.5rem; border: 1px dotted black;"></div>
+    <div id="container5" style=" height: 1000px; margin: 1.5rem; border: 1px dotted green;"></div>
+    <div class="c" style="float: right; margin: 0 1.5rem 1.5rem 0">Developed By <a href="https://ajay584.netlify.app/" target="_blank" style="text-decoration: none; font-weight: bold; font-size: 1.2rem;">Ajay Kumar</a></div>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="./app.js"></script>
 </body>

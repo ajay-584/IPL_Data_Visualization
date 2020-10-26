@@ -1,1 +1,149 @@
-{"economicBolwer":{"RN ten Doeschate":4,"J Yadav":4.14,"R Ashwin":5.72,"S Nadeem":6.14,"Parvez Rasool":6.2,"MC Henriques":6.31,"Z Khan":6.36,"MA Starc":6.8,"M Vijay":7,"Sandeep Sharma":7.04}}
+{
+    "economicBolwer": {
+        "2008": {
+            "TM Dilshan": 3,
+            "DJ Thornely": 5.71,
+            "BAW Mendis": 6,
+            "Sohail Tanvir": 6.25,
+            "IK Pathan": 6.45,
+            "DW Steyn": 6.46,
+            "RG Sharma": 6.5,
+            "SC Ganguly": 6.6,
+            "AB Dinda": 6.65,
+            "SM Pollock": 6.67
+        },
+        "2009": {
+            "R Ashwin": 3.5,
+            "CK Langeveldt": 3.75,
+            "RS Bopara": 5,
+            "AM Rahane": 5,
+            "B Lee": 5.14,
+            "M Muralitharan": 5.34,
+            "JP Duminy": 5.65,
+            "M Morkel": 5.71,
+            "A Singh": 5.88,
+            "M Kartik": 5.91
+        },
+        "2010": {
+            "ND Doshi": 4.25,
+            "V Sehwag": 4.6,
+            "AJ Finch": 5,
+            "B Akhil": 6,
+            "R Ashwin": 6.29,
+            "AB Dinda": 6.46,
+            "DP Nannes": 6.53,
+            "DW Steyn": 6.59,
+            "A Kumble": 6.59,
+            "DE Bollinger": 6.66
+        },
+        "2011": {
+            "JP Faulkner": 5,
+            "R Sharma": 5.56,
+            "SL Malinga": 5.95,
+            "M Manhas": 6,
+            "S Dhawan": 6,
+            "SS Mundhe": 6,
+            "DL Vettori": 6.06,
+            "YK Pathan": 6.1,
+            "AG Murtaza": 6.1,
+            "Bipul Sharma": 6.15
+        },
+        "2012": {
+            "L Balaji": 5.45,
+            "AG Murtaza": 5.5,
+            "SP Narine": 5.63,
+            "SW Tait": 5.92,
+            "RE van der Merwe": 6,
+            "LR Shukla": 6,
+            "DW Steyn": 6.04,
+            "SL Malinga": 6.12,
+            "A Chandila": 6.21,
+            "AB McDonald": 6.3
+        },
+        "2013": {
+            "BJ Hodge": 3,
+            "RV Gomez": 5,
+            "Bipul Sharma": 5.25,
+            "Anand Rajan": 5.38,
+            "SP Narine": 5.52,
+            "Parvez Rasool": 5.8,
+            "DW Steyn": 5.86,
+            "VS Malik": 5.9,
+            "S Nadeem": 6,
+            "RG Sharma": 6
+        },
+        "2014": {
+            "Ankit Sharma": 5.5,
+            "R Rampaul": 6.17,
+            "AR Patel": 6.33,
+            "Harbhajan Singh": 6.52,
+            "R Tewatia": 6.56,
+            "SP Narine": 6.65,
+            "Shakib Al Hasan": 6.65,
+            "SL Malinga": 6.67,
+            "B Kumar": 6.7,
+            "NM Coulter-Nile": 6.75,
+            "P Kumar": 6.75
+        },
+        "2015": {
+            "RN ten Doeschate": 4,
+            "J Yadav": 4.14,
+            "R Ashwin": 5.72,
+            "S Nadeem": 6.14,
+            "Parvez Rasool": 6.2,
+            "MC Henriques": 6.31,
+            "Z Khan": 6.36,
+            "MA Starc": 6.8,
+            "M Vijay": 7,
+            "Sandeep Sharma": 7.04
+        },
+        "2016": {
+            "N Rana": 3,
+            "MR Marsh": 5,
+            "JW Hastings": 5.29,
+            "YK Pathan": 5.5,
+            "S Gopal": 6.33,
+            "CH Gayle": 6.5,
+            "A Zampa": 6.88,
+            "Mustafizur Rahman": 6.89,
+            "R Ashwin": 6.98,
+            "KS Williamson": 7
+        },
+        "2017": {
+            "NB Singh": 4.5,
+            "Mohammad Nabi": 5.36,
+            "R Tewatia": 5.67,
+            "Avesh Khan": 6,
+            "P Negi": 6.12,
+            "Washington Sundar": 6.3,
+            "Harbhajan Singh": 6.56,
+            "S Nadeem": 6.61,
+            "GJ Maxwell": 6.63,
+            "Rashid Khan": 6.81
+        },
+        "2018": {
+            "I Sodhi": 6.04,
+            "L Ngidi": 6.48,
+            "YK Pathan": 7,
+            "Rashid Khan": 7.01,
+            "M Ur Rahman": 7.19,
+            "KH Pandya": 7.22,
+            "A Mishra": 7.32,
+            "DL Chahar": 7.39,
+            "JJ Bumrah": 7.4,
+            "N Rana": 7.5
+        },
+        "2019": {
+            "SK Raina": 6,
+            "STR Binny": 6.57,
+            "RA Jadeja": 6.59,
+            "RD Chahar": 6.74,
+            "Rashid Khan": 6.75,
+            "M Ali": 6.84,
+            "A Mishra": 6.85,
+            "A Roy": 7,
+            "J Suchith": 7,
+            "Imran Tahir": 7.09
+        }
+    }
+}

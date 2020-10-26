@@ -214,7 +214,6 @@ function extraRunData(data){
     result.push([team, data[team]])
   }
   // console.log(result)
-
 Highcharts.chart("container3", {
   chart: {
     type: "column"
@@ -248,24 +247,37 @@ Highcharts.chart("container3", {
 function fetchbolwer(){
   fetch("./topBowler.json").then(data=> data.json()).then(visualizeBowler);
 }
-fetchbolwer();
+// fetchbolwer();
 function visualizeBowler(data){
   topbowler(data.economicBolwer);
   return;
 }
+
 function topbowler(data){
+  var x;
+  x = document.getElementById("year").value;
+  if(parseInt(x) < 2008 || parseInt(x) > 2019){
+    document.getElementById('err').innerHTML = "Error: Enter year from 2008 to 2019";
+  }else{ 
+  document.getElementById('err').innerHTML = "";
   let bolwerData = [];
   for(bowler in data){
-    bolwerData.push([bowler, data[bowler]])
+    // console.log(bowler);
+    // console.log(data[bowler]);
+    if(parseInt(bowler) === parseInt(x)){
+      for(b in data[bowler]){
+        // console.log(b, data[bowler][b]);
+        bolwerData.push([b, data[bowler][b]])
+      }
+    }
   }
-  // console.log(bolwerData);
-
+  //  console.log(bolwerData);
 Highcharts.chart("container4", {
   chart: {
     type: "column"
   },
   title: {
-    text: "4.Top 10 Economical Bowlers in  2015"
+    text: "4.Top 10 Economical Bowlers in " + x
   },
   subtitle: {
     text:
@@ -287,7 +299,7 @@ Highcharts.chart("container4", {
     }
   ]
 });
-
+}// end of else statemtn
 }
 
 // ================================================= 5th graph winner teams at venue ===================================
@@ -326,27 +338,24 @@ function storyData(result){
   }
   // console.log(venue)
   let data = [];
+  let team_arr = [];
   for(v in result){
     // console.log(result[v]);
-    let temp = {};
     for(team in result[v]){
       // console.log(team,result[v][team]);
+      if(team_arr.indexOf(team) < 0){
+        team_arr.push(team);
+      }
+    }
+  }
+    for(let team of team_arr){
+      let temp = {};
       temp["name"] = team;
       temp["data"] = socre(team,result);
-    }
-    let y = true;
-    for(x of data){
-      // console.log(x.name,temp.name);
-      if(x.name === temp.name){
-        y = false;
-      }
-      // console.log(y);
-    }
-    if(y){
       data.push(temp);
     }
     
-  }
+  // console.log(team_arr);
   // console.log(venue);
   // console.log(data);
   Highcharts.chart('container5', {

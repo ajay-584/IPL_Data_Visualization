@@ -1,33 +1,46 @@
-function bolwer_data(name,matches){
-    const result = {};
-    const runs = 0;
-    const over = 0;
-    for(let bol of matches){
-        const id = parseInt(bol.match_id);
-        const run = parseInt(bol.total_runs);
-        const bolwer_over = parseInt(bol.over);
-        if( 517 < id && id < 577){
-            if(result[bol.bowler]){
-                result[bol.bowler] += run;
-                // over = bolwer_over;
-            }else{
-                result[bol.bowler] = run;
-            }
+function topEconomicBowler(matches){
+    result = {};
+    for(let i=0;i<12;i++){
+        if(i === 0){
+            result[2008] = economicalBolwer(59,118,matches)
+        }else if(i === 1){
+            result[2009] = economicalBolwer(117,175,matches)
+        }else if(i === 2){
+            result[2010] = economicalBolwer(174,235,matches)
+        }else if(i === 3){
+            result[2011] = economicalBolwer(234,308,matches)
+        }else if(i === 4){
+            result[2012] = economicalBolwer(307,382,matches)
+        }else if(i === 5){
+            result[2013] = economicalBolwer(381,458,matches)
+        }else if(i === 6){
+            result[2014] = economicalBolwer(457,518,matches)
+        }else if(i === 7){
+            result[2015] = economicalBolwer(517,577,matches)
+        }else if(i === 8){
+            result[2016] = economicalBolwer(576,637,matches)
+        }else if(i === 9){
+            result[2017] = economicalBolwer(0,60,matches)
+        }else if(i === 10){
+            result[2018] = economicalBolwer(7893,7954,matches)
+        }else if(i === 11){
+            result[2019] = economicalBolwer(11136,11416,matches)
         }
     }
     console.log(result);
-    // return over
+    return result;
 }
 
 
-function economicalBolwer(matches){
+
+
+function economicalBolwer(s,e,matches){
     const result = {};
     const over = {};
     for(let bol of matches){
         const id = parseInt(bol.match_id);
         const run = parseInt(bol.total_runs);
-        const bover = parseInt(bol.over);
-        if( 517 < id && id < 577){
+        if( s < id && id < e){
             if(result[bol.bowler]){
                 result[bol.bowler] += run;
                 // over[bol.bowler] = bover;
@@ -72,4 +85,4 @@ function economicalBolwer(matches){
     return new_result;
 }
 
-module.exports = economicalBolwer;
+module.exports = topEconomicBowler;
